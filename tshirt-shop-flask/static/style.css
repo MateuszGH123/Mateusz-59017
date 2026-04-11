@@ -1,0 +1,28 @@
+/* Styles for T-shirt shop layout */
+body {
+    background: #f3f4f6;
+    font-family: system-ui, sans-serif;
+    margin: 0;
+}
+
+header {
+    background: #111827;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.product-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}

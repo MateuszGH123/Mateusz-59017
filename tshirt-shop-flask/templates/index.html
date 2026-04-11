@@ -1,0 +1,38 @@
+<!-- Simple T-shirt Shop homepage using Flask template variables -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>TeeStore – Sklep z T-shirtami</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">TeeStore</div>
+    <nav>
+        <a href="#products">Produkty</a>
+        <a href="#about">O nas</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+</header>
+
+<section class="products-section" id="products">
+    <h2>Nasze T-shirty</h2>
+    <div class="products-grid">
+        {% for p in products %}
+        <article class="product-card">
+            <div class="product-image">{{ p.image }}</div>
+            <div class="product-title">{{ p.name }}</div>
+            <div class="product-desc">{{ p.desc }}</div>
+            <div class="product-footer">
+                <span class="price">{{ p.price }} zł</span>
+                <button class="btn-add">Dodaj do koszyka</button>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+
+</body>
+</html>
