@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podróż po USA - Poradnik</title>
+    <!-- Podpięcie zewnętrznego pliku CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAGŁÓWEK STRONY -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Odkryj Stany Zjednoczone</h1>
+            <p>Twój interaktywny przewodnik po najlepszych miejscach i zasadach podróży</p>
+            <button id="exploreBtn">Rozpocznij zwiedzanie</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- SEKCJA ZAKŁADEK (MIEJSCA DO ZWIEDZANIA) -->
+        <section id="destinations" class="section">
+            <h2 class="section-title">Co warto zobaczyć?</h2>
+            
+            <div class="tabs-container">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-target="newyork">Nowy Jork</button>
+                    <button class="tab-btn" data-target="la">Los Angeles</button>
+                    <button class="tab-btn" data-target="grandcanyon">Grand Canyon</button>
+                    <button class="tab-btn" data-target="yellowstone">Yellowstone</button>
+                </div>
+
+                <div class="tab-content active" id="newyork">
+                    <div class="tab-text">
+                        <h3>Nowy Jork</h3>
+                        <p>Betonowa dżungla, w której spełniają się sny. Miasto tętniące życiem 24 godziny na dobę.</p>
+                        <p><strong>Główne atrakcje:</strong> Spacer po zielonym Central Parku, rozświetlony neonami Times Square, wjazd na punkt widokowy Empire State Building oraz rejs pod Statuę Wolności.</p>
+                    </div>
+                    <div class="tab-image">
+                        <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=800&q=80" alt="Nowy Jork">
+                    </div>
+                </div>
+
+                <div class="tab-content" id="la">
+                    <div class="tab-text">
+                        <h3>Los Angeles</h3>
+                        <p>Światowa stolica rozrywki, dom gwiazd filmowych, pięknych plaż i niekończącego się słońca.</p>
+                        <p><strong>Główne atrakcje:</strong> Zdjęcie ze znakiem Hollywood, szukanie gwiazd na Walk of Fame, relaks na molo w Santa Monica oraz magiczny zachód słońca z Griffith Observatory.</p>
+                    </div>
+                    <div class="tab-image">
+                        <img src="https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?auto=format&fit=crop&w=800&q=80" alt="Los Angeles">
+                    </div>
+                </div>
+
+                <div class="tab-content" id="grandcanyon">
+                    <div class="tab-text">
+                        <h3>Grand Canyon</h3>
+                        <p>Jeden z najbardziej spektakularnych cudów natury na kuli ziemskiej, wyrzeźbiony przez rzekę Kolorado przez miliony lat.</p>
+                        <p><strong>Główne atrakcje:</strong> Podziwianie widoków z krawędzi South Rim, lot helikopterem nad kanionem, spływ rzeką Kolorado na dnie kanionu.</p>
+                    </div>
+                    <div class="tab-image">
+                        <img src="https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?auto=format&fit=crop&w=800&q=80" alt="Grand Canyon">
+                    </div>
+                </div>
+
+                <div class="tab-content" id="yellowstone">
+                    <div class="tab-text">
+                        <h3>Yellowstone</h3>
+                        <p>Najstarszy park narodowy na świecie, słynący z niesamowitych zjawisk geotermalnych i dzikiej przyrody.</p>
+                        <p><strong>Główne atrakcje:</strong> Wybuchający regularnie gejzer Old Faithful, bajecznie kolorowe gorące źródło Grand Prismatic Spring oraz obserwacja dziko żyjących bizonów i niedźwiedzi.</p>
+                    </div>
+                    <div class="tab-image">
+                        <img src="https://images.unsplash.com/photo-1506260408121-e353d10b87c7?auto=format&fit=crop&w=800&q=80" alt="Yellowstone">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEKCJA AKORDEON (O CZYM PAMIĘTAĆ) -->
+        <div class="tips-bg">
+            <section id="tips" class="section">
+                <h2 class="section-title">O czym warto pamiętać?</h2>
+                
+                <div class="accordion">
+                    <button class="accordion-btn">Wiza / Zezwolenie ESTA</button>
+                    <div class="panel">
+                        <p>Obywatele polscy mogą podróżować do USA w celach turystycznych do 90 dni bez wizy. Należy jednak pamiętać o obowiązkowej rejestracji i opłaceniu wniosku w systemie ESTA przed wylotem.</p>
+                    </div>
+
+                    <button class="accordion-btn">Napiwki w restauracjach</button>
+                    <div class="panel">
+                        <p>W Stanach Zjednoczonych napiwki (tipping) są bardzo mile widziane i w dobrym tonie jest je zostawiać. Zazwyczaj wynoszą od 15% do 20% wartości rachunku, i robi to niemal każdy, ponieważ stanowią one ważną część wynagrodzenia kelnerów.</p>
+                    </div>
+
+                    <button class="accordion-btn">Ubezpieczenie turystyczne i zdrowotne</button>
+                    <div class="panel">
+                        <p>Koszty leczenia w USA należą do najwyższych na świecie. Przed wylotem bezwzględnie warto wykupić bardzo dobre prywatne ubezpieczenie turystyczne z wysoką kwotą pokrycia kosztów medycznych.</p>
+                    </div>
+                    
+                    <button class="accordion-btn">Podatki doliczane przy kasie</button>
+                    <div class="panel">
+                        <p>Pamiętaj, że ceny widoczne na półkach w sklepach zazwyczaj podane są bez podatku (Sales Tax). Ostateczna kwota, którą zapłacisz przy kasie, będzie wyższa (wysokość podatku zależy od konkretnego stanu).</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- STOPKA -->
+    <footer>
+        <p>&copy; 2026 Projekt zaliczeniowy z technologii webowych - Podróże po USA</p>
+    </footer>
+
+    <!-- Podpięcie zewnętrznego pliku JS -->
+    <script src="script.js"></script>
+</body>
+</html>
